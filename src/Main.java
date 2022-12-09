@@ -1,4 +1,5 @@
 import transport.Car;
+import transport.Train;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,5 +30,14 @@ public class Main {
         boolean result = hyundai.IsRegistrationNumberCorrect();
         System.out.println(result);
         audi.changeTyres();
+
+        Train lastochka = new Train("Ласточка", "В-901", 2011, "Россия",
+                301, 3500, "", "Белорусский вокзал",
+                "Минск-Пассажирский", 11);
+        System.out.println(lastochka);
+        Train leningrad = new Train("Ленинград", "D-125", 2019, "Россия",
+                270, 1700, "", "Ленинградский вокзал",
+                "Ленинград-Пассажирский", 8);
+        System.out.println(leningrad);
     }
 }

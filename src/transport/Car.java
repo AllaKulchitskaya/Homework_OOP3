@@ -15,7 +15,7 @@ public class Car extends Transport {
     public Car(String brand, String model, int year, String country, String color,
                double engineVolume, String gearBbox, String bodywork, String registrationNumber,
                int seatNumber, boolean areTyresSnow, Key key, Insurance insurance) {
-        super(brand, model, year, country, color);
+        super(brand, model, year, country);
         setEngineVolume(engineVolume);
         setGearBbox(gearBbox);
         if (bodywork == null || bodywork.isEmpty() || bodywork.isBlank()) {

@@ -8,11 +8,15 @@ public class Transport {
     private String color;
     private int maxSpeed;
 
-    public Transport(String brand, String model, int year, String country, String color) {
-        this(brand, model, year, country, color, 120);
+    public Transport(String brand, String model, int year, String country) {
+        this(brand, model, year, country, 120, "белый");
     }
 
-    public Transport(String brand, String model, int year, String country, String color, int maxSpeed) {
+    public Transport(String brand, String model, int year, String country, int maxSpeed) {
+        this(brand, model, year, country, maxSpeed, "белый");
+    }
+
+    public Transport(String brand, String model, int year, String country, int maxSpeed, String color) {
         if (brand == null || brand.isEmpty() || brand.isBlank()) {
             this.brand = "default";
         } else {
