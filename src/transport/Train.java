@@ -75,8 +75,8 @@ public class Train extends Transport {
 
     @Override
     public String toString() {
-        return "Поезд " + this.getBrand() + ", модель " + this.getModel() + ", год выпуска " + this.getYear() +
-                ", страна производства " + this.getCountry() + ", скорость передвижения - " + this.getMaxSpeed() +
+        return "Поезд " + this.getBrand() + ", модель " + this.getModel() + ", год выпуска - " + this.getYear() +
+                ", страна производства - " + this.getCountry() + ", скорость передвижения - " + this.getMaxSpeed() +
                 " км/ч, станция отправления - " + departureStation + ", станция прибытия - " + finalStation +
                 ", цена поездки - " + ticketCost + " рублей, количетсво вагонов в поезде - " + carriageNumber;
     }

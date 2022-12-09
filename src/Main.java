@@ -1,3 +1,4 @@
+import transport.Bus;
 import transport.Car;
 import transport.Train;
 
@@ -39,5 +40,14 @@ public class Main {
                 270, 1700, "", "Ленинградский вокзал",
                 "Ленинград-Пассажирский", 8);
         System.out.println(leningrad);
+
+        Bus liaz = new Bus("ЛиАЗ", "Курсор-4292", 2015, "Россия", 85,
+                "серебристый");
+        System.out.println(liaz);
+        Bus hyundaiBus = new Bus("Hyundai", "Aero Town", 2012, "Южная Корея", 90,
+                "голубой");
+        System.out.println(hyundaiBus);
+        Bus volvo = new Bus("Volvo", "8900", 2010, "Швеция", 95, "зеленый");
+        System.out.println(volvo);
     }
 }
